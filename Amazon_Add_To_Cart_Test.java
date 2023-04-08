@@ -25,6 +25,8 @@ public class Amazon_Add_To_Cart_Test extends BaseClass {
 //		js.executeScript("arguments[0].scrollIntoView()",redmi10);
 		asus.click();
 		Thread.sleep(1000);
+		
+		
 		driver.navigate().refresh();
 		WebElement text=driver.findElement(By.xpath("//span[@class='a-size-large product-title-word-break']"));
 		String title=text.getText();
